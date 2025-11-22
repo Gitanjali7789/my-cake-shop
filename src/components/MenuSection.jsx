@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CAKES } from '../data.js'; // Correct path!
+import { CAKES } from '../data.js'; 
 import { Star, Plus } from 'lucide-react';
 import Button from './Button';
 
@@ -57,7 +57,8 @@ const MenuSection = ({ addToCart }) => {
                     <p className="text-xs text-rose-500 font-bold uppercase tracking-wide">{cake.category}</p>
                     <h3 className="text-xl font-bold text-stone-800">{cake.name}</h3>
                   </div>
-                  <span className="text-xl font-serif font-bold text-stone-800">${cake.price}</span>
+                  {/* RUPEE SYMBOL IS HERE 👇 */}
+                  <span className="text-xl font-serif font-bold text-stone-800">₹{cake.price}</span>
                 </div>
                 <p className="text-stone-500 text-sm mb-6 line-clamp-2">{cake.description}</p>
                 
